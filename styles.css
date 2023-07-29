@@ -69,3 +69,7 @@ div {
   padding: 20px;
   block-size: fit-content(20em)
 }
+.Rounded_Box{
+  border-radius: 3% / 28%; 
+  border: 3px groove #B9B3FF;
+}
