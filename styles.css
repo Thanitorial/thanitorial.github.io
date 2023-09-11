@@ -1,45 +1,7 @@
-@font-face {
-  font-family: 'alex_brushregular';
-  src: url('alexbrush-regular-webfont.woff2') format('woff2'),
-       url('alexbrush-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Prompt&family=Ubuntu+Mono:wght@400;700&display=swap');
 
-@font-face {
-  font-family: 'chunkfive_printregular';
-  src: url('chunk_five_print-webfont.woff2') format('woff2'),
-       url('chunk_five_print-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'chunkfiveregular';
-  src: url('chunkfive-regular-webfont.woff2') format('woff2'),
-       url('chunkfive-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'quicksandbook_oblique';
-  src: url('quicksand_book_oblique-webfont.woff2') format('woff2'),
-       url('quicksand_book_oblique-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'impact_labelregular';
-  src: url('impact_label-webfont.woff2') format('woff2'),
-       url('impact_label-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-html{
-    --s: 60px; /* control the size*/
+/* html{
+    --s: 60px; /* control the size
     --c1: #000000;
     --c2: #ff5900;
     --c3: #004e75;
@@ -52,24 +14,64 @@ html{
       conic-gradient(from 180deg at calc(100%/3),var(--c1) 60deg,var(--_g)),
       linear-gradient(90deg,var(--c1) calc(100%/6), var(--c2) 0 50%, var(--c1) 0 calc(500%/6),var(--c2) 0);
   background-size: calc(1.732*var(--s)) var(--s);
-  }
-.mainheader {
-  font-family:"impact_labelregular" , serif;
+  } */
+
+/* The Magic Float Center Code */
+.heading{
+  height:auto;
 }
-header {
-  --c2: #ff5202;
-  --c3: #00aaff;
-  height: min-content;
-  padding: 16px;
-  margin: -10px;
+.float_center {
+  display:flex;
+  width:100%;
+  justify-content: center;
+  background:#62968073;
+  border-radius: 4px;
+
+}
+.float_center > .child {
+  
+}
+
+html{
+  width:100%;
+  height:100%;
+  background: rgb(116,0,144);
+  background: linear-gradient(135deg, rgba(116,0,144,1) 0%, rgba(172,49,98,1) 12%, rgba(210,82,67,1) 30%, rgba(148,148,148,1) 59%, rgba(144,150,151,1) 61%, rgba(0,212,255,1) 100%);
+}
+.text {
   text-align: center;
-  background:linear-gradient(var(--c3),var(--c2))
+  font-family: 'Comfortaa', cursive;
 }
-div {
+
+ul {
+  
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  float: left;
+  list-style-type: none;
+  margin: .5em;
+}
+ul a {
+  display: block;
+  height: 26px;
+  line-height: 26px;
+  text-decoration: none;
+  color: #C12247;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: .25em .5em;
+  background-color: #ffffff;
+	border-radius: 4px;
+}
+
+/* div {
   padding: 20px;
   block-size: fit-content(20em)
-}
-.Rounded_Box{
+} */
+/* .Rounded_Box{
   border-radius: 3% / 28%; 
   border: 3px groove #B9B3FF;
-}
+} */
